@@ -9,7 +9,7 @@ OpenJDK Runtime Environment GraalVM CE 22.1.0 (build 11.0.15+10-jvmci-22.1-b06)
 OpenJDK 64-Bit Server VM GraalVM CE 22.1.0 (build 11.0.15+10-jvmci-22.1-b06, mixed mode, sharing)
 ```
 2) `mvn clean install -DskipTests`
-3) `cd child-project`
+3) `cd child-project`. **Note** that this is the project that depends on the child-project-2's test jar as shown [here](https://github.com/mpeddada1/0.9.12-test-jar/blob/eedbb2f4ce171a5bd7a346d35cb630ac3f34f18c/child-project/pom.xml#L27).
 4) `mvn test -Pnative`
 5) See the following error:
 
